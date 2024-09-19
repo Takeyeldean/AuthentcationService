@@ -10,5 +10,7 @@ namespace AuthentcationServiceForTradingMarket.Model
 
         [Required, MaxLength(50)]
         public string LastName { get; set; }
+
+        public bool  IsEmailConfirmed{ get; set; }
     }
 }

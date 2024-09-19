@@ -11,11 +11,16 @@ namespace AuthentcationServiceForTradingMarket.Services
 
         public async Task<int> SendEmailAsycn(string email)
         {
+
+            var ma = "adonis.welch22@ethereal.email";
+            var pa = "WsXANVTurd1SHdCQrs";
+
+
             var sender = new MimeMessage();
-            sender.From.Add(MailboxAddress.Parse("janelle92@ethereal.email"));
+            sender.From.Add(MailboxAddress.Parse(ma));
             sender.To.Add(MailboxAddress.Parse(email));
             sender.Subject = "Verify your email";
-            var otp = Random.Shared.Next(1000, 9999);
+            var otp =Convert.ToInt32( Random.Shared.Next(1000, 9999));
             sender.Body = new TextPart(TextFormat.Text)
             {
                 Text = $"This is your OTP {otp}. Please DO NOT share it with anyone."
@@ -24,7 +29,7 @@ namespace AuthentcationServiceForTradingMarket.Services
             using var smtp = new SmtpClient();
 
             smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("janelle92@ethereal.email", "Yf2kJH15WJetQ5n4dX");
+            smtp.Authenticate(ma,pa);
             smtp.Send(sender);
             smtp.Disconnect(true);
 

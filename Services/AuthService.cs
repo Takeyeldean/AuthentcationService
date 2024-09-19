@@ -43,7 +43,8 @@ namespace AuthentcationServiceForTradingMarket.Services
                 UserName = model.Username,
                 FirstName = model.FirstName,
                 LastName = model.LastName,
-                Email = model.Email
+                Email = model.Email,
+                IsEmailConfirmed = false,
             };
             var resutl = await _userManager.CreateAsync(user, model.password);// Add it
           
@@ -77,7 +78,8 @@ namespace AuthentcationServiceForTradingMarket.Services
                 IsAuthenticated = true,
                 Roles = new List<string> { "User" },
                 Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
-                Username = user.UserName
+                Username = user.UserName,
+                IsEmailConfirmed = user.IsEmailConfirmed,
             };
 
 
@@ -91,6 +93,11 @@ namespace AuthentcationServiceForTradingMarket.Services
             if (user == null || !await _userManager.CheckPasswordAsync(user, model.Password))
             {
                 authmodel.Message = "Email or password is wrong";
+                return authmodel;
+            }
+            if(!user.IsEmailConfirmed)
+            {
+                authmodel.Message = "Please confirme your email first";
                 return authmodel;
             }
 

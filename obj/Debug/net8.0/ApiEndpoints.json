@@ -1,15 +1,20 @@
 [
   {
     "ContainingType": "AuthentcationServiceForTradingMarket.Controllers.AuthController",
-    "Method": "RegisterEmail",
-    "RelativePath": "Auth/email",
+    "Method": "ConfirmEmail",
+    "RelativePath": "Auth/confirmEmail",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OTP",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
