@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "AuthentcationServiceForTradingMarket.Controllers.AuthController",
+    "Method": "RegisterEmail",
+    "RelativePath": "Auth/email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthentcationServiceForTradingMarket.Controllers.AuthController",
+    "Method": "GetTokenAsync",
+    "RelativePath": "Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AuthentcationServiceForTradingMarket.Model.TokenRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthentcationServiceForTradingMarket.Controllers.AuthController",
+    "Method": "RegisterAsync",
+    "RelativePath": "Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AuthentcationServiceForTradingMarket.Model.RegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

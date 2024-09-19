@@ -1,0 +1,6 @@
+@AuthentcationServiceForTradingMarket_HostAddress = http://localhost:5072
+
+GET {{AuthentcationServiceForTradingMarket_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
