@@ -12,8 +12,8 @@ namespace AuthentcationServiceForTradingMarket.Services
         public async Task<int> SendEmailAsycn(string email)
         {
 
-            var ma = "adonis.welch22@ethereal.email";
-            var pa = "WsXANVTurd1SHdCQrs";
+            var ma = "queen.anderson@ethereal.email";
+            var pa = "Ub7Ay1UNC1Dh8s1mB7";
 
 
             var sender = new MimeMessage();

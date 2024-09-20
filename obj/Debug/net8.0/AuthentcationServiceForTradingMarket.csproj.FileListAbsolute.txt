@@ -264,3 +264,4 @@ D:\Projects\AuthentcationServiceForTradingMarket\AuthentcationServiceForTradingM
 D:\Projects\AuthentcationServiceForTradingMarket\AuthentcationServiceForTradingMarket\bin\Debug\net8.0\System.IO.Abstractions.dll
 D:\Projects\AuthentcationServiceForTradingMarket\AuthentcationServiceForTradingMarket\bin\Debug\net8.0\TestableIO.System.IO.Abstractions.dll
 D:\Projects\AuthentcationServiceForTradingMarket\AuthentcationServiceForTradingMarket\bin\Debug\net8.0\TestableIO.System.IO.Abstractions.Wrappers.dll
+D:\Projects\AuthentcationServiceForTradingMarket\AuthentcationServiceForTradingMarket\obj\Debug\net8.0\AuthentcationServiceForTradingMarket.sourcelink.json
