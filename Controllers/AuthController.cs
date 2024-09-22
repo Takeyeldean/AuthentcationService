@@ -46,11 +46,13 @@ namespace AuthentcationServiceForTradingMarket.Controllers
             };
             _dbcontext.Set<OtpAndEmail>().Add(otpandemail);
             _dbcontext.SaveChanges();
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"your id to confirm an email is{otpandemail.ID}");
+            Console.WriteLine($"your id to confirm an email is { otpandemail.ID}");
             Console.ForegroundColor = ConsoleColor.White;
 
             return Ok(result);
+
 
         }
 

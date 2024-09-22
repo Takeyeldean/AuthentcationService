@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthentcationServiceForTradingMarket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7191816c7498fd504288446e0148d8dff412e8cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0704cdcab3d49c99aacadcc43055b43ea94a10e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthentcationServiceForTradingMarket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthentcationServiceForTradingMarket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,12 +15,12 @@ namespace AuthentcationServiceForTradingMarket.Services
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly JWT _jwt;
-        private readonly IEmailSender _emailSender;
+       
         public AuthService(UserManager<ApplicationUser> userManager, IOptions<JWT> jwt,IEmailSender emailSender)
         {
             _userManager = userManager;
             _jwt = jwt.Value;
-            _emailSender = emailSender;
+       
         }
         
         // Register Function
@@ -116,6 +116,7 @@ namespace AuthentcationServiceForTradingMarket.Services
             return authmodel;
 
         }
+
 
         private async Task<SecurityToken> CreateJwtToken(ApplicationUser user)
         {
