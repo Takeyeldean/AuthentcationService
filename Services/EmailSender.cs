@@ -11,12 +11,9 @@ namespace AuthentcationServiceForTradingMarket.Services
       
         public async Task<int> SendEmailAsycn(string email)
         {
-            // Replace with your Gmail credentials
             var ma = "tekoo146@gmail.com";
-            var pa = "empywvomxxntadjo";
+            var pa = "MY_App_Password";
 
-
-            // Create email message
             var sender = new MimeMessage();
             sender.From.Add(MailboxAddress.Parse(ma));
             sender.To.Add(MailboxAddress.Parse(email));
@@ -31,22 +28,13 @@ namespace AuthentcationServiceForTradingMarket.Services
             try
             {
                 using var smtp = new SmtpClient();
-
-                // Connect to Gmail's SMTP server
                 smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-
-                // Authenticate with your Gmail credentials
                 smtp.Authenticate(ma, pa);
-
-                // Send email
                 await smtp.SendAsync(sender);
-
-                // Disconnect from the server
                 smtp.Disconnect(true);
             }
             catch (Exception ex)
             {
-                // Handle or log exception
                 throw new Exception("Failed to send email.", ex);
             }
 
